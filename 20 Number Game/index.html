@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Number Order Game</title>
+        <link rel="stylesheet" href="20numbergame_css.css">
+    </head>
+    <body>
+
+        <header>
+            <div id="header_div">    
+                <h1>NUMBER ORDER GAME</h1>   
+                <button id="night_mode" onclick="night_mode_activator(this)"></button>         
+            </div>
+            <div id="progress_bar_div">
+
+            </div>
+        </header>
+
+        <main>        
+            <div id="list_div" class="main_div">
+                <ol>
+                </ol>
+            </div>
+
+            <div id="number_roller_div" class="main_div">
+                <ul>
+                    <li><p id="random_number_displayer">?</p></li>
+                    <li><button class="start_buttons" id="start_button1" onclick="start(1)" onmouseenter="start_mouse_on(1)" onmouseleave="mouse_off()">Normal</button>
+                        <button class="start_buttons" id="start_button2" onclick="start(2)" onmouseenter="start_mouse_on(2)" onmouseleave="mouse_off()">Expert</button>
+                        <button class="start_buttons" id="start_button3" onclick="start(3)" onmouseenter="start_mouse_on(3)" onmouseleave="mouse_off()">Master</button></li>
+                    <li><button id="reset_button" onclick="location.reload()">Reset</button></li>
+                    <li><button class="joker_activator" onclick="joker_activator_onclick1(this)" id="joker_activator1" onmouseenter="joker_activator_mouse_on(1)" onmouseleave="mouse_off()"></button>
+                        <button class="joker_activator" onclick="joker_activator_onclick2(this)" id="joker_activator2" onmouseenter="joker_activator_mouse_on(2)" onmouseleave="mouse_off()"></button>
+                        <button class="joker_activator" onclick="joker_activator_onclick3(this)" id="joker_activator3" onmouseenter="joker_activator_mouse_on(3)" onmouseleave="mouse_off()"></button></li>
+                    <li><p id="joker_explainer"></p></li>
+                    <li><button id="joker_canceler" onclick="cancel_func()">Cancel</button></li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="20numbergame_js.js"></script>

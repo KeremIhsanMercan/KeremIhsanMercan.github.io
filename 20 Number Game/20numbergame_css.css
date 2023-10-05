@@ -1,0 +1,180 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+#header_div, #number_roller_div {
+    border: 3px solid black;
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul:first-child {
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+#list_div {
+    width: 30%;
+}
+
+.num_list_item {
+    font-size: 25px;
+    font-family: monospace;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+button {
+    font-size: 12px;
+
+}
+
+p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+}
+
+#number_roller_div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#random_number_displayer {
+    border: 3px solid black;
+    height: 300px;
+    font-size: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 300px;
+}
+
+#progress_bar {
+    width: 100%;
+}
+
+.num_list_item>b {
+    max-width: 100px;
+    width: 100px;
+    text-align: right;
+}
+.num_list_item>p {
+    max-width: 100px;
+    width: 100px;
+    text-align: left;
+}
+.num_list_item>button {
+    max-width: 100px;
+    width: 100px;
+    text-align: center;
+}
+.start_buttons {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#reset_button {
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+.joker_button {
+    margin-left: 200px;
+    display: none;
+    vertical-align: middle;
+    position: fixed;
+}
+
+.joker_activator {
+    margin: 10px;
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    display:none;
+}
+
+#joker_activator1 {
+    background-image: url(images/dice.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#joker_activator2 {
+    background-image: url(images/3eraser.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#joker_activator3 {
+    background-image: url(images/eraser.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#joker_explainer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#joker_canceler {
+    margin-top: 20px;
+    visibility: hidden;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+}
+
+#night_mode {
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-image: url(images/moon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
